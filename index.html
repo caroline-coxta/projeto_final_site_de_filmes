@@ -1,195 +1,399 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ação!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ação!</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/primeiro.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+  </style>
+
 </head>
+
 <body>
-    <!-- <style>
-body {
-    background-color: #2D3034;
-    color: #ffffff; 
-    margin: 0;
-}
-.menu-horizontal {
-    display: flex;
-    /* margin-right: 6px;
-    border-radius: 3px; */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #F6D2A8;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-    gap: 20px; 
-    padding: 10px;
-}
-
-.menu-horizontal a {
-    display: block;
-    color: #FF7B60;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.video {
-    width: vw;
-    align-items:end;
-}
-  .series-board {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 900px;
-  }
-
-  .legend {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-  }
-
-  .legend-item {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-    border-radius: 3px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.8rem;
-  }
-
-  .card {
-    padding: 0.8rem;
-    border-radius: 6px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-  }
-
-  /* Cores de cada categoria */
-  .filmes { background-color: #C1B3E0; }
-  .series { background-color: #75c2f9; }
-  .animes { background-color: #f3a8c2; }
-  .ficcao-cientifica { background-color: #BFDDB1;  }
-
-  /* Legend colors */
-  .legend .filmes { background-color: #9161B4; }
-  .legend .series { background-color: #0EB9A9; }
-  .legend .animes { background-color:  #D6758D; }
-  .legend .ficcao-cientifica { background-color: #94BF45; }
-
-  .texto_principal {
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 900px;
-    font-family: Arial, sans-serif;
-  }
-  .texto_principal h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #94BF45;
-  }
-</style> -->
-
-    <nav>
-        <ol class="menu-horizontal">
-            <li><img src="logo-acao.png" alt="Ação" style="width: 5%; height: auto"><a href="#"></a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Login</a></li>
-        </ol>
+  <header>
+    <nav class="cabecalho">
+      <a href="index.html" class="menu-home">HOME</a>
+      <a href="drama.html" class="menu-drama">DRAMA</a>
+      <a href="musicais.html" class="menu-musicais">MUSICAIS</a>
+      <a href="romance.html" class="menu-romance">ROMANCE</a>
+      <a href="suspense.html" class="menu-suspense">SUSPENSE</a>
     </nav>
+  </header>
+  <div class="banner">
+    <img src="./img/banner-site.jpg" alt="" width="100%">
 
-<div class="video">
-    src="<iframe width="1371" height="1028" src="https://www.youtube.com/embed/jx7A4zrc3no" title="Trailer antigo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video>
-
-</div>
-
-<section class="series-board">
-  <h2>Os melhores de cada categoria</h2>
-
-  <div class="legend">
-    <span class="legend-item filmes"></span>Filmes
-    <span class="legend-item series"></span>Séries
-    <span class="legend-item animes"></span>Animes
-    <span class="legend-item ficcao-cientifica"></span> ficcao-cientifica
   </div>
+  <main>
+    <section class="series-board">
+      <h2>OS MELHORES DE CADA CATEGORIA</h2>
 
-  <div class="grid">
-    <div class="card filmes">Abbott Elementary</div>
-    <div class="card series">Tedd Lasso</div>
-    <div class="card animes">Ugly Betty</div>
-    <div class="card filmes">Mythic Quest</div>
-    <div class="card ficcao-cientifica">Brooklyn Nine-Nine</div>
 
-    <div class="card animes">Succession</div>
-    <div class="card filmes">The Pitt</div>
-    <div class="card animes">Severance</div>
-    <div class="card animes">Mad Men</div>
-    <div class="card animes">Silicon Valley</div>
 
-    <div class="card filmes">Party Down</div>
-    <div class="card series">It's Always Sunny in Philadelphia</div>
-    <div class="card animes">Veep</div>
-    <div class="card animes">Superstore</div>
-    <div class="card filmes">The Bear</div>
+      <div class="grid">
 
-    <div class="card series">Parks and Recreation</div>
-    <div class="card series">Ted Lasso</div>
-    <div class="card filmes">The White Lotus</div>
-    <div class="card animes">Industry</div>
-    <div class="card ficcao-cientifica">Reno 911!</div>
+        <div class="card drama" id="teste">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Kamikaze Girls</span>
+            </div>
+            <div class="card-back">
+              <img src="img/kamikaze_girls.gif" alt="Kamikaze Girls">
+            </div>
+          </div>
+        </div>
 
-    <div class="card series">Grey's Anatomy</div>
-    <div class="card series">Scrubs</div>
-    <div class="card animes">The Office</div>
-    <div class="card animes">30 Rock</div>
-    <div class="card ficcao-cientifica">The Morning Show</div>
-  </div>
+        <div class="card musicais">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Os Miseráveis</span>
+            </div>
+            <div class="card-back">
+              <img src="img/os miseraveis.gif" alt="Os Miseráveis">
+            </div>
+          </div>
+        </div>
 
-  <article class="texto_principal">
-    <h2 class="titulo_principal">What is Lorem Ipsum?</h2>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-    </p>
-        <br>
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Como eu era antes de você</span>
+            </div>
+            <div class="card-back">
+              <img src="img/como_eu_era_antes_de_voce.gif" alt="Como eu era antes de você">
+            </div>
+          </div>
+        </div>
+
+        <div class="card suspense">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Hereditário</span>
+            </div>
+            <div class="card-back">
+              <img src="img/hereditary.gif" alt="Hereditário">
+            </div>
+          </div>
+        </div>
+
+        <div class="card drama">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Love Exposure</span>
+            </div>
+            <div class="card-back">
+              <img src="img/love_explosure.gif" alt="Love Exposure">
+            </div>
+          </div>
+        </div>
+
+        <div class="card musicais">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Chicago</span>
+            </div>
+            <div class="card-back">
+              <img src="img/chicago.gif" alt="Chicago">
+            </div>
+          </div>
+        </div>
+
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Esposa de Mentirinha</span>
+            </div>
+            <div class="card-back">
+              <img src="img/esposa de mentirinha.gif" alt="Esposa de Mentirinha">
+            </div>
+          </div>
+        </div>
+
+        <div class="card suspense">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Corra!</span>
+            </div>
+            <div class="card-back">
+              <img src="img/corra2.gif" alt="Corra!">
+            </div>
+          </div>
+        </div>
+
+        <div class="card drama">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Night on Earth</span>
+            </div>
+            <div class="card-back">
+              <img src="img/night on earth.gif" alt="Night on Earth">
+            </div>
+          </div>
+        </div>
+
+        <div class="card musicais">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Mamma Mia!</span>
+            </div>
+            <div class="card-back">
+              <img src="img/mamma_mia.gif" alt="Mamma Mia!">
+            </div>
+          </div>
+        </div>
+
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>A Proposta</span>
+            </div>
+            <div class="card-back">
+              <img src="img/a proposta2.gif" alt="A Proposta">
+            </div>
+          </div>
+        </div>
+
+        <div class="card suspense">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Midsommar</span>
+            </div>
+            <div class="card-back">
+              <img src="img/midsimmar.gif" alt="Midsommar">
+            </div>
+          </div>
+        </div>
+
+        <div class="card drama">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Mysterious Skin</span>
+            </div>
+            <div class="card-back">
+              <img src="img/mystery skin.gif" alt="Mysterious Skin">
+            </div>
+          </div>
+        </div>
+
+        <div class="card musicais">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Amor, Sublime Amor</span>
+            </div>
+            <div class="card-back">
+              <img src="img/west_side_story.gif" alt="Amor, Sublime Amor">
+            </div>
+          </div>
+        </div>
+
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Vestida para Casar</span>
+            </div>
+            <div class="card-back">
+              <img src="img/27 Dresses.gif" alt="Vestida para Casar">
+            </div>
+          </div>
+        </div>
+
+        <div class="card drama">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Lady Vengeance</span>
+            </div>
+            <div class="card-back">
+              <img src="img/Lady Vengeance.gif" alt="Lady Vengeance">
+            </div>
+          </div>
+        </div>
+
+        <div class="card musicais">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Hairspray: Em Busca da Fama</span>
+            </div>
+            <div class="card-back">
+              <img src="img/Hairspray: Em Busca da Fama.gif" alt="Hairspray">
+            </div>
+          </div>
+        </div>
+
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Ela é Demais</span>
+            </div>
+            <div class="card-back">
+              <img src="img/ela e demais.gif" alt="Ela é Demais">
+            </div>
+          </div>
+        </div>
+
+        <div class="card suspense">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>A Hora do Mal</span>
+            </div>
+            <div class="card-back">
+              <img src="img/hora do mal.gif" alt="A Hora do Mal">
+            </div>
+          </div>
+        </div>
+
+        <div class="card drama">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>A Hora da Estrela</span>
+            </div>
+            <div class="card-back">
+              <img src="img/hora da estela.gif" alt="A Hora da Estrela">
+            </div>
+          </div>
+        </div>
+
+        <div class="card musicais">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Tick, Tick... Boom!</span>
+            </div>
+            <div class="card-back">
+              <img src="img/Tick, Tick... Boom! .gif" alt="Tick, Tick... Boom!">
+            </div>
+          </div>
+        </div>
+
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>10 Coisas que Eu Odeio em Você</span>
+            </div>
+            <div class="card-back">
+              <img src="img/10 Coisas que Eu Odeio em Você.gif" alt="10 Coisas que Eu Odeio em Você">
+            </div>
+          </div>
+        </div>
+
+        <div class="card suspense">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>A Médium</span>
+            </div>
+            <div class="card-back">
+              <img src="img/a-medium.gif" alt="A Médium">
+            </div>
+          </div>
+        </div>
+
+        <div class="card romance">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Como Perder um Homem em 10 Dias</span>
+            </div>
+            <div class="card-back">
+              <img src="img/como perde um homem em 10 dias.gif" alt="Como Perder um Homem em 10 Dias">
+            </div>
+          </div>
+        </div>
+
+        <div class="card suspense">
+          <div class="card-inner">
+            <div class="card-front">
+              <span>Pisque Duas Vezes</span>
+            </div>
+            <div class="card-back">
+              <img src="img/pisque-duas-vezes.gif" alt="pisque-duas-vezes">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="legenda">
+        <h3 class="legend-item drama"><a href="drama.html">Drama</a></h3>
+        <h3 class="legend-item musicais"><a href="musicais.html">Musicais</a></h3>
+        <h3 class="legend-item romance  "><a href="romance.html">Romance</a></h3>
+        <h3 class="legend-item suspense"><a href="suspense.html">Suspense</a></h3>
+      </div>
+
+
+      <article class="texto_principal">
+        <h2>Damos as boas vindas ao Ação!</h2>
+        <h3>Aqui, o cinema não é só visto — é sentido.</h3>
         <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. 
-            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
-            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-            and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes 
-            from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
-            This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
-            "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          O Ação é um espaço para quem ama filmes e tudo o que vem com eles: as histórias que grudam na cabeça, as
+          músicas que ficam no corpo e os diálogos que a gente leva pra vida.
         </p>
         <br>
         <p>
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
-            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, 
-            accompanied by English versions from the 1914 translation by H. Rackham.
+          Falamos sobre dramas que apertam o peito, romances que fazem suspirar, musicais que dão vontade de cantar e
+          suspenses que fazem a respiração parar. Mas, acima de tudo, falamos sobre o que o cinema faz com a gente — o
+          que muda, o que marca, o que inspira.
         </p>
+        <br>
+        <p>
+          Sem clichês, sem nota de rodapé, sem pressa.
+          Só boas conversas, boas ideias e aquele amor por cinema que nunca sai de cena.
+        </p>
+        <br>
+        <p>Porque todo filme merece ser sentido.</p>
+      </article>
 
+      <h2 class="um">Equipe de Desenvolvimento</h2>
+      <div class="componentes">
+        <div class="imagens-integrantes">
+          <img class="integrante" src="img/carol.jpeg" alt="imagem 1" width="200px" height="200px">
+          <p>Carol</p>
+        </div>
+        <div class="imagens-integrantes">
+          <img class="integrante" src="img/tete.jpeg" alt="imagem 2" width="200px" height="200px">
+          <p>Sthefany Thayane</p>
+        </div>
+        <div class="imagens-integrantes">
+          <img class="integrante" src="img/lana.jpeg" alt="imagem 3" width="200px" height="200px">
+          <p>Sthefany Lana</p>
+        </div>
+        <div class="imagens-integrantes">
+          <img class="integrante" src="img/laura.jpeg" alt="imagem 4" width="200px" height="200px">
+          <p>Laura</p>
+        </div>
+        <div class="imagens-integrantes">
+          <img class="integrante" src="img/isa.jpeg" alt="imagem 5" width="200px" height="200px">
+          <p>Isabela</p>
+  </main>
+  <footer class="rodape">
+    <div class="rodape-esquerda">
+      <label for="e-mail">Receba nossa newsletter</label>
+    </div>
 
-  </article>
-</section>
+    <div class="rodape-centro">
+      <form method="POST" action="index.php">
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <input type="text" id="e-mail" name="e-mail" placeholder="Digite seu e-mail">
+      </form>
+    </div> 
+
+    <div class="rodape-direita">
+      <img src="img/newsletter.jpg" alt="Newsletter" class="img-hover">
+      <button type="submit">Cadastrar</button>  
+    </div>
+  
+  </footer>
+  </section>
 
 
 
 </body>
+
 </html>
